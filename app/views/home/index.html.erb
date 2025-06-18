@@ -1,0 +1,48 @@
+<div class="bg-neutral-300 w-screen bg-cover bg-center bg-repeat">
+    <div class="">
+
+        <%= render partial: 'LandingHero',
+            locals: {
+                landingElements: [
+                {
+                    Bottone: "Brasile",
+                    Link: ""
+                },
+                {
+                    Bottone: "Cile",
+                    Link: ""
+                },
+                {
+                    Bottone: "Perù",
+                    Link: ""
+                },
+                {
+                    Bottone: "Colombia",
+                    Link: ""
+                },
+                {
+                    Bottone: "Argentina",
+                    Link: ""
+                },],
+
+                landingMiddle: [
+                    "ESPLORA IL MONDO DELL'AMERICA LATINA!",
+                ]
+            }
+        %>
+
+        <div class="overflow-x-scroll ">
+            <%= render partial: 'Card',
+                locals: {
+                    cardElements: [
+                        "Consigli pratici",
+                        "https://www.maalox.com/.imaging/webp/sanofi-chc/img400x300/dam/maalox-it/it-it/stomaco/consigli/sport-e-digestione/article_page_attivit%C3%A0_fisica.webp/jcr:content/article_page_attivit%C3%A0_fisica.webp",
+                        "Sport e digestione",
+                        "Il movimento è importante, si sa. Ma lo sapevi che può influenzare la digestione?"
+                    ]
+                }
+            %>
+        </div>
+
+    </div>
+</div>
