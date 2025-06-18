@@ -24,7 +24,33 @@
 
   <body>
     <main class="container">
+      <%= render partial: 'Navbar',
+        locals: {
+            navbarElements: [
+            {
+                Bottone: "Brasile",
+                Link: "brasile"
+            },
+            {
+                Bottone: "Cile",
+                Link: "cile"
+            },
+            {
+                Bottone: "Perù",
+                Link: "peru"
+            },
+            {
+                Bottone: "Colombia",
+                Link: "colombia"
+            },
+            {
+                Bottone: "Argentina",
+                Link: "argentina"
+            },],
+        }
+      %>
       <%= yield %>
+      <%= render partial: 'Footer' %>
     </main>
   </body>
 </html>
