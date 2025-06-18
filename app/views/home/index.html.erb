@@ -1,4 +1,4 @@
-<div class="bg-neutral-300 w-screen bg-cover bg-center bg-repeat">
+<div class="bg-neutral-300 w-screen bg-cover bg-center bg-no-repeat">
     <div class="">
 
         <%= render partial: 'LandingHero',
@@ -31,18 +31,53 @@
             }
         %>
 
-        <div class="overflow-x-scroll ">
+        <div class="flex flex-col lg:flex-row overflow-x-scroll">
             <%= render partial: 'Card',
                 locals: {
                     cardElements: [
-                        "Consigli pratici",
-                        "https://www.maalox.com/.imaging/webp/sanofi-chc/img400x300/dam/maalox-it/it-it/stomaco/consigli/sport-e-digestione/article_page_attivit%C3%A0_fisica.webp/jcr:content/article_page_attivit%C3%A0_fisica.webp",
-                        "Sport e digestione",
-                        "Il movimento è importante, si sa. Ma lo sapevi che può influenzare la digestione?"
+                        "https://t3.ftcdn.net/jpg/02/85/64/82/360_F_285648275_VAq7WTS7UmNAaeYbujhBPR5a8pZ6YT1t.jpg", 
+                        "Brasile",
+                    ]
+                }
+            %>
+
+            <%= render partial: 'Card',
+                locals: {
+                    cardElements: [
+                        "https://media.istockphoto.com/id/683769012/it/foto/skyline-di-santiago-del-cile.jpg?s=612x612&w=0&k=20&c=J_KNK6d1InYkLH8DL-YJBBA1HyVVWMsFqAsQh1F0mhY=", 
+                        "Cile",
+                    ]
+                }
+            %>
+
+            <%= render partial: 'Card',
+                locals: {
+                    cardElements: [
+                        "https://www.shutterstock.com/image-photo/machu-picchu-cuscoperu-overview-lost-600nw-1387848629.jpg", 
+                        "Perù",
+                    ]
+                }
+            %>
+
+            <%= render partial: 'Card',
+                locals: {
+                    cardElements: [
+                        "https://thumbs.dreamstime.com/b/bogota-skyline-cityscape-colombia-capital-city-south-america-95851921.jpg", 
+                        "Colombia",
+                    ]
+                }
+            %>
+
+            <%= render partial: 'Card',
+                locals: {
+                    cardElements: [
+                        "https://plus.unsplash.com/premium_photo-1697729901052-fe8900e24993?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVlbm9zJTIwYWlyZXN8ZW58MHx8MHx8fDA%3D", 
+                        "Argentina",
                     ]
                 }
             %>
         </div>
+        
 
     </div>
 </div>
