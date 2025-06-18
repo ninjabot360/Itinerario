@@ -1,0 +1,34 @@
+<div class="bg-green-900 w-screen bg-cover bg-center bg-no-repeat">
+    <div class="">
+
+        <%= render partial: 'Navbar',
+            locals: {
+                navbarElements: [
+                {
+                    Bottone: "Brasile",
+                    Link: "brasile"
+                },
+                {
+                    Bottone: "Cile",
+                    Link: "cile"
+                },
+                {
+                    Bottone: "Perù",
+                    Link: "peru"
+                },
+                {
+                    Bottone: "Colombia",
+                    Link: "colombia"
+                },
+                {
+                    Bottone: "Argentina",
+                    Link: "argentina"
+                },],
+            }
+        %>
+
+        
+        <%= render partial: 'Footer' %>
+
+    </div>
+</div>
