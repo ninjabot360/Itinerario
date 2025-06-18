@@ -50,7 +50,13 @@
         }
       %>
       <%= yield %>
-      <%= render partial: 'Footer' %>
+      <%= render partial: 'Footer',
+        locals: {
+          compagniaElementi: ["Chi siamo", "Lavora con noi", "Marchio", "Notiziario"],
+          normeElementi: ["Termini", "Politica sulla privacy", "Impostazioni dei cookie", "Linee guida", "Riconoscimenti", "Licenze", "Informazioni sulla compagnia"],
+          footerElementi: ["Prodotto", "Compagnia", "Risorse", "Norme"]
+        }
+      %>
     </main>
   </body>
 </html>
